@@ -9,9 +9,9 @@ function App() {
   };
   return (
     <>
-      {isShown && <Title name="Products" fontWeight="bold" />}
+      {isShown && <Title name="Products" type="bold" />}
       <button onClick={handleClick}>
-        {!isShown ? "Show Title" : "Hide Title"}
+        {isShown ? "Hide Title" : "Show Title"}
       </button>
     </>
   );
